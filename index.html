@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <title>Document</title>
+
+</head>
+
+<style>
+  .nav-link {
+    font-weight: bold;
+  }
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  body {
+    background-color: #212529;
+  }
+
+  .accordion-item {
+    border: 5px white;
+  }
+
+  .accordian {
+    border: 2px white;
+  }
+
+  .card1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #icon-1 {
+    width: 30vw;
+  }
+
+  .para {
+    color: white;
+    font-size: large;
+  }
+
+  .para2 {
+    font-size: larger;
+  }
+</style>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+      <h1><a href="index.html" class="navbar-brand text-white"><i class="fas fa-piggy-bank"></i> Budget Tracker</a></h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+      <div class="collapse navbar-collapse " id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item ">
+            <a href="login.html" class="nav-link text-white">Login/Sign-in</a>
+          </li>
+          <li class="nav-item">
+            <a href="indexjs.html" class="nav-link text-white">Dashboard</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- showcase -->
+  <section class="bg-dark text-light p-5 text-center text-sm-start">
+    <div class="container">
+      <div class="d-sm-flex align-items-center justify-content-center">
+        <div class="heading">
+          <h1>Budget <span style="color: coral;">Tracker</span></h1>
+          <p class="para">All your money at one place</p>
+          <p class="d-sm-size-4">See where all your money goes by easily adding your income and expenses.
+            Say goodbye to spreadsheets with customizable budgets. Easily add and update your categories.
+          </p>
+          <button type="button" class="btn btn-primary"><a href="indexjs.html"
+              style="color: white; text-decoration: none;">Track now</a></button>
+        </div>
+        <div class="img-ms-3">
+          <img src="landing.svg" class="img-fluid d-none d-sm-block" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-dark text-light p-5 text-center text-sm-start" id="para2">
+    <p class="para2">
+      Budget Tracker System is designed to keep a track of Income-Expense of a person on a day-to-day basis. This System
+      divides the Income based on daily expenses.
+      If you exceed the day's expense, the system will cut it from your income and will provide a new daily expense
+      allowed amount. If that day’s expense is less, the system will add it as income.
+    </p>
+  </section>
+  <!-- description -->
+  <!-- <div class="description">
+    <div class="row1">
+      <div class="card1">
+         <img src="/frontend/save.jpg" alt="" class="saving"> -->
+  <!-- <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita minus velit consequatur hic eos
+          laudantium ipsam consequuntur neque qui.</p>
+      </div>
+    </div>
+    <div class="row2">
+
+    </div>
+
+  </div>- -->
+
+  <!-- Question Accordian -->
+  <h2 style="color: white; margin-left: 5vw;">FAQ's</h2>
+  <div class="accordion bg-dark m-5" id="accordionExample">
+    <div class="accordion-item bg-dark text-white">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          How can we add expenses ?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          User can define the categories of their expense and income. All the entries are in dollars.IF the input is
+          negative(ie,money is spent)it is taken under the section of Expense else it is taken under the section of
+          income
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item bg-dark text-white">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Can we track our expenses ?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            Yes you can track the expenses 
+        </div>
+      </div>
+      
+    </div>
+    <footer>
+      <hr style="color: white;">
+      <h2 style="color: white; margin-left: 45%;">Thank You</h2>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
